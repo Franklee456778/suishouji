@@ -1,0 +1,15 @@
+# 更新签名私钥，绝对不能进版本库
+.keys/
+
+# 依赖与构建产物，不进版本库（npm ci / npm run build 可重新生成）
+node_modules/
+dist/
+
+# Rust 构建产物
+src-tauri/target/
+
+# 打包产物
+*.dmg
+
+# macOS
+.DS_Store

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <!-- 系统沙盒：只能碰自己的容器和用户在对话框里选的文件。 -->
+  <key>com.apple.security.app-sandbox</key>
+  <true/>
+  <!-- 导出 / 插入图片时，用户在对话框里选中的位置。 -->
+  <key>com.apple.security.files.user-selected.read-write</key>
+  <true/>
+  <!-- WKWebView 在沙盒里没有 network.client 就加载不了任何页面（2026-11-01 实测：
+       进程在但页面空白），所以只能给。应用自身不联网，外发靠 CSP、跳转拦截、
+       外链原生确认、禁用 WebRTC 几层挡住。network.server 不给：不能监听端口。 -->
+  <key>com.apple.security.network.client</key>
+  <true/>
+</dict>
+</plist>

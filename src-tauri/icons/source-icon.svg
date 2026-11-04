@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3f8f86"/>
+      <stop offset="1" stop-color="#1f5f63"/>
+    </linearGradient>
+  </defs>
+  <rect x="100" y="100" width="824" height="824" rx="186" fill="url(#bg)"/>
+  <!-- 一张折角的纸 -->
+  <path d="M290 214 H620 L752 346 V810 H290 Z" fill="#fbfaf6" stroke="#fbfaf6" stroke-width="40" stroke-linejoin="round"/>
+  <path d="M620 214 V346 H752 Z" fill="#c9dcd6" stroke="#c9dcd6" stroke-width="40" stroke-linejoin="round"/>
+  <!-- 手写的一笔 + 一个勾 -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M360 400 H540" stroke="#9fb9b4" stroke-width="42"/>
+    <path d="M360 510 H682" stroke="#9fb9b4" stroke-width="42"/>
+    <path d="M388 664 L478 748 L668 590" stroke="#1f5f63" stroke-width="70"/>
+  </g>
+</svg>
